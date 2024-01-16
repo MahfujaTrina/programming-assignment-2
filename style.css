@@ -495,7 +495,38 @@ hr {
     }
 }
 
+@media (max-width: 600px) {
+    .header-section {
+        flex-direction: column;
+    }
 
+    .nav-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-container img {
+        margin-bottom: 10px;
+    }
+
+    .items {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .text-banner h1 {
+        font-size: 40px;
+    }
+
+    .text-banner p {
+        font-size: 14px;
+    }
+
+    .banner-box {
+        flex-direction: column;
+        gap: 16px;
+    }
+}
 @media screen and (max-width: 600px) {
     #popular {
         flex-direction: column; 
@@ -552,3 +583,47 @@ hr {
     }
 }
 
+
+
+
+
+.hamburger-menu {
+    display: none;
+    cursor: pointer;
+    margin-right: 20px; 
+}
+
+.bar {
+    width: 30px;
+    height: 3px;
+    background-color: #131318;
+    margin: 6px 0;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+    .items {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        z-index: 1;
+    }
+
+    .items a {
+        padding: 15px;
+        text-align: center;
+        width: 100%;
+        display: block;
+    }
+
+    .hamburger-menu {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+}
