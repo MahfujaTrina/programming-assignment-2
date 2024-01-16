@@ -22,10 +22,12 @@ body {
 }
 .nav-container img
 {
-   width: 90px;
+   width: 60px;
+   margin-right: 10px;
 }
 .nav-container h3{
     font-size: 30px;
+    display: inline-block;
 }
 span
 {
@@ -51,7 +53,6 @@ span
 .banner{
     max-width: 1200px;
     margin: 0 auto;
-    border: 2px solid red;
     min-height: 400px;
     background-image: url('Images/Group\ 13\ \(1\)\ \(1\).png');
     border-radius: 16px;
@@ -543,7 +544,7 @@ hr {
     }
 
     .another-tour img {
-        width: 350px;
+        width: 85%;
         height: 330px;
         border-radius: 16px;
         order: 2; 
@@ -583,10 +584,6 @@ hr {
     }
 }
 
-
-
-
-
 .hamburger-menu {
     display: none;
     cursor: pointer;
@@ -600,7 +597,7 @@ hr {
     margin: 6px 0;
 }
 
-/* Responsive styles */
+
 @media (max-width: 600px) {
     .items {
         display: none;
@@ -620,6 +617,7 @@ hr {
         width: 100%;
         display: block;
     }
+    
 
     .hamburger-menu {
         display: flex;
@@ -627,3 +625,4 @@ hr {
         align-items: center;
     }
 }
+
