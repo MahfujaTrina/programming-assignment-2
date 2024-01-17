@@ -514,7 +514,7 @@ font-weight: 400;
 
 }
 
-@media  (min-width: 600px) {
+@media screen and (min-width: 600px) {
     .team h1 {
         font-size: 36px;
     }
