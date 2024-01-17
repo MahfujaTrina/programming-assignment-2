@@ -2,6 +2,8 @@
 body {
     font-family: 'Mulish', sans-serif;
 }
+
+/*Header section */
 .header-section
 {
     max-width: 1200px;
@@ -17,12 +19,10 @@ body {
     border: 2px solid transparent;
     min-height: 20px;
     display: flex;
-    align-items: center;
-
 }
 .nav-container img
 {
-   width: 60px;
+   width: 100px;
    margin-right: 10px;
 }
 .nav-container h3{
@@ -49,6 +49,7 @@ span
 }
 
 
+/*Banner section */
 
 .banner{
     max-width: 1200px;
@@ -107,7 +108,7 @@ span
     color: #ffffff;
 }
 
-
+/*Our Popular tours section */
 
 #popular{
     max-width: 1200px;
@@ -152,10 +153,12 @@ font-weight: 400;
 }
 
 
+/*Choose your destination section */
 #destination{
-    max-width: 1200px;
+    max-width:1200px;
     margin: 50px auto 0;
     min-height: 400px;
+    margin-top:-10px ;
 }
 .your-destination h1{
     color: #131318;
@@ -231,10 +234,10 @@ font-weight: 400;
 
 
 
-
+/*Why choose us section */
  #choose-us{
     max-width: 1200px;
-    margin: 50px auto 0;
+    margin: 0px auto 0;
     min-height: 400px;
 }
 .choose-head h1{
@@ -291,7 +294,7 @@ font-weight: 400;
 
 
 
-
+/*News letter section */
 
 #news {
     max-width: 1200px;
@@ -397,7 +400,11 @@ hr {
 
 
 
-
+/*Footer section */
+#footer2
+{
+    margin-top: 10px;
+}
 .below-container
 {
     background: rgba(19, 19, 24, 0.05);
@@ -412,6 +419,13 @@ hr {
 .below-container h3{
     font-size: 30px;
 }
+
+.tic
+{
+    display: flex;
+    justify-content: center;
+}
+
 
 .social-icons {
     list-style: none;
@@ -430,7 +444,7 @@ hr {
     font-size: 24px;
 }
 
-
+/*Our team section */
 #team1
 {
     max-width: 1200px;
@@ -480,6 +494,16 @@ hr {
 }
 
 
+
+
+
+
+
+
+
+/*Responsive  section */
+
+/*our team  section */
 @media (max-width: 600px) {
     .team {
         padding: 40px;
@@ -495,15 +519,15 @@ hr {
         height: 80px;
     }
 }
-
+/*Header section */
 @media (max-width: 600px) {
     .header-section {
         flex-direction: column;
     }
 
     .nav-container {
-        flex-direction: column;
-        align-items: flex-start;
+         display: flex;
+         justify-content: left;
     }
 
     .nav-container img {
@@ -528,6 +552,7 @@ hr {
         gap: 16px;
     }
 }
+/*Our POpular tours section */
 @media screen and (max-width: 600px) {
     #popular {
         flex-direction: column; 
@@ -551,7 +576,7 @@ hr {
     }
 }
 
-
+/*Why choose us section */
 @media (max-width: 600px) {
     .grid-container,
     .grid-container1 {
@@ -566,9 +591,10 @@ hr {
     }
 }
 
-
+/*News letter section */
   @media (max-width: 600px) {
     .news-container {
+        display: flex;
         flex-direction: column;
     }
 
@@ -576,7 +602,7 @@ hr {
         order: 2; 
     }
 }
-
+/*responsive footer section */
 @media (max-width: 600px) {
     .social-icons li {
         display: inline-block; 
@@ -584,20 +610,16 @@ hr {
     }
 }
 
+/*Hamburger section */
 .hamburger-menu {
     display: none;
     cursor: pointer;
-    margin-right: 20px; 
-}
-
-.bar {
-    width: 30px;
-    height: 3px;
-    background-color: #131318;
-    margin: 6px 0;
+    margin-right: 0px;
+    margin-top: -60px; 
 }
 
 
+/*Responsive hamburger  section */
 @media (max-width: 600px) {
     .items {
         display: none;
@@ -621,8 +643,15 @@ hr {
 
     .hamburger-menu {
         display: flex;
-        justify-content: flex-end;
-        align-items: center;
+        justify-content: right;
+        
+     
     }
 }
 
+/*responsive for destination*/
+@media (max-width: 600px) {
+    #destination {
+        margin-top: -180px; 
+    }
+}
