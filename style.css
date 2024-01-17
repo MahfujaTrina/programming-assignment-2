@@ -682,23 +682,20 @@ font-weight: 400;
 
 @media screen and (min-width: 600px) {
     .news {
-        flex-direction: row; /* Switch back to row layout for larger screens */
-    }
+        flex-direction: row;    }
 
     .news1,
     .another-news {
-        flex-grow: 1; /* Allow each section to take available space */
-    }
+        flex-grow: 1;   }
 
     .news-container {
-        flex-direction: column; /* Switch back to row layout for larger screens */
-    }
+        flex-direction: column;   }
 
     .another-news{
-        width:500px; /* Reset width to auto for larger screens */
+        width:500px; 
     }
 
     .another-news-box {
-        width:auto; /* Reset width to auto for larger screens */
+        width:auto; 
     }
 }
